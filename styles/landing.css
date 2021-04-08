@@ -1,0 +1,188 @@
+body
+{
+	margin:0px;
+	font-family:'Arial',sans-serif;
+	/*background-color:rgba(0,0,0,0.2);*/
+}
+#main-nav,footer
+{
+	background-color:black;
+	color:white;
+	display:flex;
+	height:70px;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+}
+#main-nav h1
+{
+	margin:0px;
+}
+#main-nav #nav-items a
+{
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:7px 0px;
+}
+#main-nav #nav-items a:hover
+{
+	background-color:orange;
+	box-shadow:0 0 10px white;
+	color:black;
+	border-radius:10px;
+}
+
+/*----------Landing Page-----------*/
+#main-content
+{
+	background:white url("../images/grp.jpg") no-repeat scroll center;
+	background-size:cover;
+	height:100vh;
+}
+#main-content #main-content-wrapper
+{
+	background-color:rgba(0,0,0,0.2);
+	color:white;
+	height:100%;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+
+}
+#main-content #main-content-wrapper h1
+{
+	margin:0px;
+}
+#main-content #main-content-wrapper button
+{
+	background-color:orange;
+	box-shadow:0 0 10px white;
+	padding:7px 15px;
+	border-radius:10px;
+	border:none;
+	outline:none;
+}
+#main-content #main-content-wrapper button:hover
+{
+	cursor:pointer;
+}
+
+/*-----------Main-Content Section----------*/
+#main-content-section
+{
+	text-align:center;
+	margin-top:20px;
+}
+#main-content-section .main-content-article
+{
+	box-shadow:0 0 10px darkblue;
+	border:3px solid darkblue;
+	width:260px;
+	display:inline-grid;
+	border-radius:20px;
+	overflow:hidden;
+	margin:6px;
+}
+#main-content-section .main-content-article h2
+{
+	text-shadow:0 0 10px black;
+	color:darkblue;
+}
+#main-content-section .main-content-article img
+{
+	width:inherit;
+	height:200px;
+	opacity:0.5;
+	transition:all 1s;
+}
+#main-content-section .main-content-article img:hover
+{
+	transform:scale(1.1,1.1);
+}
+/*----------Text Section----------------*/
+#text-section
+{
+	text-align:center;
+	background-color:rgba(0,0,0,0.6);
+	color:white;
+	padding:5px;
+	margin-top:10px;
+}
+#text-section h1
+{
+	font-size:40px;
+}
+
+/*-----------Course Section--------*/
+#course-section
+{
+	text-align:center;
+}
+#course-section h1
+{
+	color:darkblue;
+}
+#course-section .course-section-article
+{
+	box-shadow:0 0 10px darkblue;
+	width:300px;
+	display:inline-grid;
+	padding:5px;
+	border:7px solid darkblue;
+	border-radius:10px;
+}
+#course-section .course-section-article figure
+{
+	width:230px;
+
+}
+#course-section .course-section-article figure img
+{
+	width:inherit;
+	height:200px;
+	opacity:0.6;
+}
+
+/*------------Course Details Section----------*/
+
+#course-details-section
+{
+	margin-top:10px;
+	width:100%;
+}
+
+#course-details-section .course-details-article
+{
+	display:inline-grid;
+	box-shadow:0 0 10px darkblue;
+	margin:40px;
+	border:5px solid darkblue;
+	width:40%;
+
+}
+#course-details-section .course-details-article figure
+{
+	width:inherit;
+	margin:auto;
+}
+#course-details-section .course-details-article figure img
+{
+	width:inherit;
+	height:250px;
+}
+footer a
+{
+	color:white;
+}
+
+@media (max-width:850px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+}
+

@@ -1,0 +1,80 @@
+body
+{
+	margin:0px;
+	font-family:'Arial',sans-serif;
+}
+#main-nav
+{
+	background-color:black;
+	color:white;
+	display:flex;
+	height:70px;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+}
+#main-nav h1
+{
+	margin:0px;
+}
+#main-nav #nav-items a
+{
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:7px 0px;
+}
+#main-nav #nav-items a:hover
+{
+	background-color:orange;
+	box-shadow:0 0 10px white;
+	color:black;
+	border-radius:10px;
+}
+
+/*----------Landing Page-----------*/
+#main-content
+{
+	background:white url("grp.jpg") no-repeat scroll center;
+	background-size:cover;
+	height:100vh;
+}
+#main-content #main-content-wrapper
+{
+	background-color:rgba(0,0,0,0.2);
+	color:white;
+	height:100%;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+
+}
+#main-content #main-content-wrapper h1
+{
+	margin:0px;
+}
+#main-content #main-content-wrapper button
+{
+	background-color:orange;
+	box-shadow:0 0 10px white;
+	padding:7px 15px;
+	border-radius:10px;
+	border:none;
+	outline:none;
+}
+#main-content #main-content-wrapper button:hover
+{
+	cursor:pointer;
+}
+
+
+@media (max-width:850px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+}
+
